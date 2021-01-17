@@ -1,0 +1,29 @@
+$mainColor: black;
+
+body
+{
+    font-size: 16px;
+    color: black;
+}
+
+.Breakfast-mainDiv
+{
+    width: 80%;
+    margin:auto;
+
+    text-align: center;
+    margin-top: 5em;
+}
+
+.Breakfast-element
+{
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px black;
+
+    margin: 3em auto;
+}
+
+.Breakfast-element-compleate
+{
+opacity: 40%;
+}
