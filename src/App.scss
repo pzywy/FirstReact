@@ -1,9 +1,22 @@
-$mainColor: black;
+$mainColor: #68a691;
+$hl1:#bfd3c1;
+$font:#037171;
+$hl2:#694f5d;
 
 body
 {
     font-size: 16px;
-    color: black;
+    color: $font;
+    background-color: $hl1;
+}
+html, body, #root
+{
+    position:absolute;
+    width: 100vw;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    top:0;
 }
 
 .Breakfast-mainDiv
@@ -13,17 +26,80 @@ body
 
     text-align: center;
     margin-top: 5em;
-}
 
-.Breakfast-element
+    background-color: $mainColor;
+    min-height: 30em;
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: 3px 3px 5px 3px $hl2;
+
+    overflow-y: scroll;
+    max-height: 50vh;
+    
+
+    overflow-y:scroll;
+    &::-webkit-scrollbar {width: .5em; }
+    
+    &::-webkit-scrollbar-track 
+    {
+        box-shadow: inset 0 0 .1em $font; 
+        border-radius: 1em;
+        
+    }
+    &::-webkit-scrollbar-thumb 
+    {
+        background: $font; 
+        border-radius: 1em;
+        
+    }
+
+
+
+    .Breakfast-element
 {
-    background-color: white;
+    background-color: $hl1;
     box-shadow: 5px 5px 5px 5px black;
 
     margin: 3em auto;
+    border-radius: 1em;
 }
 
-.Breakfast-element-compleate
-{
-opacity: 40%;
+    .Breakfast-element-compleate
+    {
+    opacity: 40%;
+    }
+
+    button
+    {
+        font-size: 1em;
+        min-width: 6em;
+        min-height: 2em;
+        border-radius: 2em;
+        background-color: $hl1;
+        color:$font;
+        font-weight: bold;
+        margin: .2em;
+
+        &:focus
+        {
+            outline: none;
+        }
+
+    }
+
+    input[type='text']
+    {
+        border-radius: 2em;
+        min-width: 5em;
+        min-height: 2em;
+    }
+
+    .Breakfast-inputs
+    {
+        width: 80%;
+        margin: auto;
+        margin-top: 3em;
+    }
+
 }
+
